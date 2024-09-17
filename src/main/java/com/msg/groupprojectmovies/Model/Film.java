@@ -1,12 +1,12 @@
 package com.msg.groupprojectmovies.Model;
 
+import jakarta.persistence.*;
 
-import jakarta.persistence.Entity;
-import jakarta.persistence.GeneratedValue;
-import jakarta.persistence.GenerationType;
-import jakarta.persistence.Id;
+
+
 
 @Entity
+@Table(name = "films")
 public class Film {
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
@@ -17,6 +17,8 @@ public class Film {
     private String description;
     private int year;
     private double rating;
+
+
 
     public Long getId() {
         return id;
