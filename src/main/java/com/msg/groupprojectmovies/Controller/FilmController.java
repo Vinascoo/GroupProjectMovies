@@ -16,6 +16,7 @@ public class FilmController {
     @Autowired
     private FilmService filmService;
 
+
     @GetMapping
     public ResponseEntity<List<Film>> getAllFilms() {
         return ResponseEntity.ok(filmService.getAllFilms());
@@ -36,6 +37,7 @@ public class FilmController {
         Film savedFilm = filmService.saveFilm(film);
         return ResponseEntity.status(HttpStatus.CREATED).body(savedFilm);
     }
+
 
     @PutMapping("/{id}")
     public ResponseEntity<Film> updateFilm(@PathVariable Long id, @RequestBody Film film) {
