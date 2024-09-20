@@ -8,11 +8,10 @@ import org.springframework.http.ResponseEntity;
 import org.springframework.web.bind.annotation.*;
 
 import java.util.List;
-
+//Lagt  till RestController
 @RestController
 @RequestMapping("/films")
 public class FilmController {
-
     @Autowired
     private FilmService filmService;
 
