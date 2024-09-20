@@ -12,4 +12,3 @@ public class GroupProjectMoviesApplication {
 		SpringApplication.run(GroupProjectMoviesApplication.class, args);
 	}
 }
-
