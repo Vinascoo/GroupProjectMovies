@@ -8,10 +8,12 @@ import org.springframework.http.ResponseEntity;
 import org.springframework.web.bind.annotation.*;
 
 import java.util.List;
-//Lagt  till RestController
+// FilmController hanterar HTTP-förfrågningar relaterade till filmer,
+// inklusive att hämta, skapa, uppdatera och ta bort filmresurser.
 @RestController
 @RequestMapping("/films")
 public class FilmController {
+
     @Autowired
     private FilmService filmService;
 
