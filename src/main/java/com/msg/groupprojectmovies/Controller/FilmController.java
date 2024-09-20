@@ -13,6 +13,7 @@ import java.util.List;
 @RequestMapping("/films")
 public class FilmController {
 
+    //lagt till @Autowired (Automatiskt injicera en instans av FilmService)
     @Autowired
     private FilmService filmService;
 
