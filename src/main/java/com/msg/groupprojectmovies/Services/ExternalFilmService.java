@@ -8,7 +8,7 @@ public class ExternalFilmService {
     private final RestTemplate restTemplate = new RestTemplate();
 
     public String searchFilms(String query) {
-        String url = "https://api.themoviedb.org/3/search/movie?api_key=df0eb7f0729911f3781785d3811ec8dd&query=" + query;
+        String url = "https://api.themoviedb.org/3/search/movie?api_key=8d9d0b4a259a870ed0ffa76eb055d047&query=" + query;
         return restTemplate.getForObject(url, String.class);
     }
 }
