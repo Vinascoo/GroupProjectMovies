@@ -45,7 +45,8 @@ public class FilmController {
         return ResponseEntity.status(HttpStatus.CREATED).body(savedFilm);
     }
 
-
+    //Lägger till @PutMapping för att uppdatera en befintlig film med nytt data
+    // baserat på ett angivet ID i URL -Commit 2(Matteus)
     @PutMapping("/{id}")
     public ResponseEntity<Film> updateFilm(@PathVariable Long id, @RequestBody Film film) {
         film.setId(id);
