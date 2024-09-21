@@ -7,6 +7,6 @@ import java.util.List;
 
 public interface FilmRepository extends JpaRepository<Film, Long> {
 
-    // Commit 1 (SIYAR): Lagt till metod för att söka filmer baserat på titel.
+    // Commit 1 (Siyar): Lagt till metod för att söka filmer baserat på titel.
     List<Film> findByTitleContainingIgnoreCase(String title);
 }
