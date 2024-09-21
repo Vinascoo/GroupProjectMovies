@@ -14,8 +14,13 @@ import java.util.List;
 @RequestMapping("/films")
 public class FilmController {
 
+    //lagt till @Autowired (Automatiskt injicera en instans av FilmService)
     @Autowired
     private FilmService filmService;
+
+
+
+    //Commit 8 (Siyar): Lägger till @GetMapping för att mappa HTTP GET-förfrågningar till metoden
 
     @GetMapping
     public ResponseEntity<List<Film>> getAllFilms() {
@@ -31,7 +36,9 @@ public class FilmController {
             return ResponseEntity.notFound().build();
         }
     }
-
+    //Lägger till @PostMapping för att hantera HTTP POST-förfrågningar
+    // och skapa en ny film. Returnerar HTTP-status 201 (Created)
+    // tillsammans med den sparade filmens data.- Commit 1 (Matteus)
     @PostMapping
     public ResponseEntity<Film> addFilm(@RequestBody Film film) {
         Film savedFilm = filmService.saveFilm(film);
