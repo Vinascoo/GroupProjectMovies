@@ -17,7 +17,6 @@ public class FilmController {
     @Autowired
     private FilmService filmService;
 
-
     @GetMapping
     public ResponseEntity<List<Film>> getAllFilms() {
         return ResponseEntity.ok(filmService.getAllFilms());
