@@ -13,6 +13,8 @@ import org.springframework.boot.autoconfigure.domain.EntityScan;
 public class GroupProjectMoviesApplication {
 
 	public static void main(String[] args) {
+
+		// Commit 3 (SIYAR): Startar Spring Boot-applikationen, vilket initierar alla konfigurationer och startar webbservern.
 		SpringApplication.run(GroupProjectMoviesApplication.class, args);
 	}
 }
