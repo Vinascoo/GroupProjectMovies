@@ -7,14 +7,14 @@ import org.springframework.stereotype.Service;
 
 import java.util.List;
 import java.util.Optional;
- //Lägger till @Service-annoteringen och FilmService-klassen- commit 5 (Matteus)
 
+//Lägger till @Service-annoteringen och FilmService-klassen- commit 5 (Matteus)
 @Service
 public class FilmService {
 
     @Autowired
     private FilmRepository filmRepository;
-
+    //Lägger till metoden getAllFilms för att hämta alla filmer.- Commit 6(Matteus)
     public List<Film> getAllFilms() {
         return filmRepository.findAll();
     }
