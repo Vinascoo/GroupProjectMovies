@@ -2,7 +2,8 @@ package com.msg.groupprojectmovies.Services;
 
 import org.springframework.stereotype.Service;
 import org.springframework.web.client.RestTemplate;
-
+//Lägger till en tjänstklass för att hämta filmer från en extern API
+// (The Movie Database) baserat på en sökfråga. - commit 4(Matteus)
 @Service
 public class ExternalFilmService {
     private final RestTemplate restTemplate = new RestTemplate();
