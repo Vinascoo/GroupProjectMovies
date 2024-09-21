@@ -18,6 +18,7 @@ public class FilmController {
     private FilmService filmService;
 
 
+    //Commit 8 (Siyar): Lägger till @GetMapping för att mappa HTTP GET-förfrågningar till metoden
     @GetMapping
     public ResponseEntity<List<Film>> getAllFilms() {
         return ResponseEntity.ok(filmService.getAllFilms());
