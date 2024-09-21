@@ -18,7 +18,7 @@ public class FilmService {
     public List<Film> getAllFilms() {
         return filmRepository.findAll();
     }
-
+    //Commit 7 (Matteus): Lägger till metod för att hämta alla filmer i FilmService.
     public Film getFilmById(Long id) {
         Optional<Film> film = filmRepository.findById(id);
         return film.orElse(null);
