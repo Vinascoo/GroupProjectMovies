@@ -53,7 +53,9 @@ public class FilmController {
         Film updatedFilm = filmService.saveFilm(film);
         return ResponseEntity.ok(updatedFilm);
     }
-
+    //Lägger till @DeleteMapping för att radera en film baserat på ett
+    // angivet ID i URL -Commit 3(Matteus)
+    //
     @DeleteMapping("/{id}")
     public ResponseEntity<Void> deleteFilm(@PathVariable Long id) {
         filmService.deleteFilm(id);
