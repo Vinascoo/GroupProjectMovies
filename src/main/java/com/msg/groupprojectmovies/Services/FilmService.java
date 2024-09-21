@@ -23,7 +23,7 @@ public class FilmService {
         Optional<Film> film = filmRepository.findById(id);
         return film.orElse(null);
     }
-
+    //Lägger till metoder för att spara, ta bort och söka filmer. -Commit 8(Matteus)
     public Film saveFilm(Film film) {
         return filmRepository.save(film);
     }
